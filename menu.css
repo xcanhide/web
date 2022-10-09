@@ -1,0 +1,109 @@
+/*BUTTONS*/
+.btn {
+  z-index: 9999;
+  width: 2.5em;
+  height: 2.5em;
+  cursor: pointer;
+  border: none;
+  background: var(--bg);
+  transition: var(--s);
+}
+
+/*MENU BUTTON*/
+#mnubtn {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#ham i {
+  display: block;
+  width: 1.1em;
+  height: .15em;
+  transition: var(--s);
+  background: var(--fg);
+}
+
+#ham i:nth-child(2) {
+  margin-top: .2em;
+}
+
+#mnu:checked~#mnubtn {
+  transform: translateY(10em);
+  transition: var(--s);
+}
+
+#mnu:checked~#mnubtn #ham i {
+  transition: var(--s);
+}
+
+#mnu:checked~#mnubtn #ham i:nth-child(1) {
+  transform: translateY(.17em) rotate(315deg);
+  width: .8em;
+}
+
+#mnu:checked~#mnubtn #ham i:nth-child(2) {
+  transform: translateY(-.17em) rotate(405deg);
+  width: .8em;
+}
+
+/*TOP BUTTON*/
+#topbtn {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  transform: translateY(2.5em);
+}
+
+#topbtn i {
+  display: block;
+  width: 0;
+  height: 0;
+  border-right: .5em solid transparent;
+  border-bottom: .5em solid var(--fg);
+  border-left: .5em solid transparent;
+}
+
+/*MENU*/
+.mnuscrn {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  display: grid;
+  overflow: visible;
+  width: 2.5em;
+  height: 10em;
+  transition: all .5s ease;
+  transform: translateY(-10em);
+  justify-content: center;
+  grid-template-columns: repeat(1, 2.5em);
+  grid-auto-rows: repeat(4, 2.5em);
+  grid-gap: 0;
+  grid-auto-flow: dense;
+}
+
+#mnu:checked~.mnuscrn {
+  z-index: 9990;
+  transition: var(--s);
+  transform: translateX(0);
+}
+
+/*MENU BUTTONS*/
+#circle {
+  display: block;
+  width: .6em;
+  height: .6em;
+  border: .2em solid var(--fg);
+  border-radius: 50%;
+}
+
+#moon {
+  display: block;
+  margin-right: 0.1em;
+  width: .8em;
+  height: .8em;
+  border-radius: 50%;
+  background: var(--bg);
+  box-shadow: inset -.2em 0 0 .1em var(--fg);
+}
