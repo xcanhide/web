@@ -8,7 +8,6 @@
   grid-auto-rows: minmax(5em, 1fr);
   grid-gap: 1.25em;
   grid-auto-flow: dense;
-  max-width: 49em;
 }
 
 .frame {
