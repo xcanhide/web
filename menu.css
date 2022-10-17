@@ -29,7 +29,7 @@
 }
 
 #mnu:checked~#mnubtn {
-  transform: translateY(10em);
+  transform: translateY(7.5em);
   transition: var(--s);
 }
 
@@ -73,12 +73,12 @@
   display: grid;
   overflow: visible;
   width: 2.5em;
-  height: 10em;
+  height: 7.5em;
   transition: all .5s ease;
   transform: translateY(-10em);
   justify-content: center;
   grid-template-columns: repeat(1, 2.5em);
-  grid-auto-rows: repeat(4, 2.5em);
+  grid-auto-rows: repeat(3, 2.5em);
   grid-gap: 0;
   grid-auto-flow: dense;
 }
