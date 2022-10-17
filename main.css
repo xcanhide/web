@@ -1,8 +1,6 @@
 :root {
   font-size: calc(18px + (40 - 18) * ((100vw - 500px) / (4000 - 500)));
   font-family: monospace;
-  --bg: rgb(250, 250, 250);
-  --fg: rgb(20, 20, 20);
   --s: transform .5s ease;
   --h: transform .2s ease;
   --e: opacity .5s ease;
@@ -12,6 +10,11 @@
 [theme='dark'] {
   --bg: rgb(10, 10, 10);
   --fg: rgb(245, 245, 245);
+}
+
+[theme='light'] {
+  --bg: rgb(250, 250, 250);
+  --fg: rgb(20, 20, 20);
 }
 
 * {
