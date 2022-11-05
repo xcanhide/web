@@ -3,8 +3,8 @@
   --fg: rgb(20, 20, 20);
   font-size: calc(1em + 1vmin);
   font-family: 'Roboto', sans-serif;
-  --s: transform .5s ease;
-  --h: transform .2s ease;
+  --s: all .5s ease;
+  --h: all .2s ease;
   --e: opacity .5s ease;
   --r: opacity .2s ease;
 }
@@ -39,11 +39,20 @@ body {
 }
 
 .txt {
-  font-size: .6em;
+  font-size: .75em;
+  text-align: center;
+  text-decoration: none;
+  color: var(--fg);
+  font-weight: bold;
+}
+
+.txt2 {
+  font-size: .7em;
   text-align: center;
   text-decoration: none;
   color: var(--fg);
 }
+
 
 .box {
   z-index: 1;

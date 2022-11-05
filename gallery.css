@@ -10,9 +10,15 @@
   grid-auto-flow: dense;
 }
 
+.wide {
+  grid-column: span 2;
+}
+
 .frame {
   overflow: hidden;
+  position: relative;
 }
+
 
 .frame img {
   width: 100%;
@@ -20,33 +26,30 @@
   transition: var(--h);
   transform: scale(1.05);
   object-fit: cover;
+  
 }
 
 .frame:hover img {
+  filter: contrast(500%)  blur(15px) opacity(0.1);
   transition: var(--h);
-  transform: scale(1.01);
+  transform: scale(1.10);
 }
 
 .label {
-  display: none;
-  padding: 2em;
-  transition: all .2s ease;
-  background: var(--bg);
-  font-weight: bold;
+  display: block;
+  opacity: 0;
+  transition: var(--h);
   position: absolute;
+  pointer-events: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .frame:hover .label {
-  display: block;
-  transition: all .2s ease;
-}
-
-.label:hover {
-  transform: scale(1.05);
-}
-
-.wide {
-  grid-column: span 2;
+  opacity: 1;
+  transition: var(--h);
+  pointer-events: all;
 }
 
 @media only screen and (max-width: 600px) {
