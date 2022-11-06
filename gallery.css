@@ -2,8 +2,7 @@
   z-index: -1;
   display: grid;
   height: auto;
-  margin-right: 2.5em;
-  margin-left: 2.5em;
+  margin: 2.5em;
   grid-template-columns: repeat(auto-fill, minmax(max(11em, 100%/4.5), 1fr));
   grid-auto-rows: minmax(5em, 1fr);
   grid-gap: 1.25em;
