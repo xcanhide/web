@@ -18,7 +18,7 @@
   overflow: hidden;
   position: relative;
   background-color: var(--bg);
-  border: .2em solid var(--fg);
+  border: .2em solid rgb(20, 20, 20);
 }
 
 .frame img {
