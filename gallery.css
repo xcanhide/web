@@ -30,7 +30,7 @@
 }
 
 .frame:hover img {
-  filter: contrast(500%)  blur(15px) opacity(0.1);
+  filter: contrast(500%)  blur(10px) opacity(.3);
   transition: var(--h);
   transform: scale(1.10);
 }
