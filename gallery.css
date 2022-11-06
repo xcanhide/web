@@ -27,13 +27,12 @@
   transition: var(--h);
   transform: scale(1.02);
   object-fit: cover;
-  opacity: 1;
 }
 
 .frame:hover img {
   transition: var(--h);
   transform: scale(1.15);
-  opacity: 1;
+  filter: contrast(200%) blur(12px);
 }
 
 .label {
@@ -49,7 +48,6 @@
   height: 100%;
   width: 100%;
   background-color: var(--bgtrans);
-  backdrop-filter: contrast(200%) blur(12px);
 }
 
 .frame:hover .label {
