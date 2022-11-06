@@ -32,7 +32,6 @@
 .frame:hover img {
   transition: var(--h);
   transform: scale(1.15);
-  filter: contrast(200%) blur(12px);
 }
 
 .label {
