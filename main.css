@@ -1,6 +1,6 @@
 :root {
   --bg: rgb(250, 250, 250);
-  --fg: rgb(20, 20, 20);
+  --fg: rgb(10, 10, 10);
   font-size: calc(1em + 1vmin);
   font-family: 'Roboto', sans-serif;
   --s: all .5s ease;
@@ -17,7 +17,7 @@
 
 [theme='light'] {
   --bg: rgb(250, 250, 250);
-  --fg: rgb(20, 20, 20);
+  --fg: rgb(10, 10, 10);
   --fgmax: rgb(0,0,0);
 }
 
