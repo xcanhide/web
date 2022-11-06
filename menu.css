@@ -16,7 +16,6 @@
 #mnu:checked~#mnubtn:hover #ham i {
   transition: var(--h);
   background: rgb(255, 255, 255);
-  box-shadow: var(--glow);
 }
 
 #ham i {
@@ -128,5 +127,4 @@
 .menulink:hover {
   transition: var(--h);
   color: rgb(255, 255, 255);
-  text-shadow: var(--glow);
 }
