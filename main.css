@@ -12,18 +12,21 @@
 [theme='dark'] {
   --bg: rgb(10, 10, 10);
   --fg: rgb(245, 245, 245);
-  --fgmax: rgb(255,255,255);
+  --fgmax:rgb(255,255,255);
+  --bgtrans: rgb(0,0,0,0.8);
 }
 
 [theme='light'] {
   --bg: rgb(250, 250, 250);
   --fg: rgb(10, 10, 10);
   --fgmax: rgb(0,0,0);
+  --bgtrans: rgb(255,255,255,0.8);
 }
 
 * {
   margin: 0;
   padding: 0;
+
 }
 
 body {
@@ -41,7 +44,7 @@ body {
 }
 
 .txt {
-  font-size: .75em;
+  font-size: .8em;
   text-align: center;
   text-decoration: none;
   color: var(--fg);
@@ -49,7 +52,7 @@ body {
 }
 
 .txt2 {
-  font-size: .7em;
+  font-size: .75em;
   text-align: center;
   text-decoration: none;
   color: var(--fg);
@@ -68,6 +71,7 @@ body {
 height: 1.2em;
 width: 1.2em;
 fill: var(--fg);
+transition: var(--h);
 }
 
 .logo{
