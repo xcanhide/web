@@ -8,6 +8,7 @@
   --h: all .2s ease;
   --gray:rgb(190,190,190);
   --white:rgb(255,255,255);
+  --block:3em;
 }
 
 * {
@@ -48,8 +49,8 @@ body {
 .box {
   z-index: 1;
   position: relative;
-  margin-right: 2.5em;
-  margin-left: 2.5em;
+  margin-right: var(--block);
+  margin-left: var(--block);
 }
 
 .icon {

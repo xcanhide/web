@@ -1,7 +1,7 @@
 .btn {
   z-index: 8;
-  width: 2.5em;
-  height: 2.5em;
+  width: var(--block);
+  height: var(--block);
   cursor: pointer;
   border: none;
   transition: var(--s);
@@ -39,7 +39,7 @@
   position: fixed;
   right: 0;
   bottom: 0;
-  transform: translateY(2.5em);
+  transform: translateY(var(--block));
   z-index: 8;
 }
 
