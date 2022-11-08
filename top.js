@@ -8,17 +8,13 @@ window.onscroll = function() {
 function scrollFunction() {
   var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
   if (currentScroll > 0) {
-    topbtn.style.transform = "translateY(0em)";
-    menubtn.style.transform = "translateX(0em)";
-    menubtn.style.justifyContent = "center";
-    closebtn.style.transform = "translateX(0em)";
-    closebtn.style.justifyContent = "center";
+    topbtn.style.transform = "translateY(0rem)";
+    menubtn.style.transform = "translateX(0rem)";
+    closebtn.style.transform = "translateX(0rem)";
   } else {
-    topbtn.style.transform = "translateY(3em)";
-    menubtn.style.transform = "translateX(-3em)";
-    menubtn.style.justifyContent = "right";
-    closebtn.style.transform = "translateX(-3em)";
-    closebtn.style.justifyContent = "right";
+    topbtn.style.transform = "translateY(3rem)";
+    menubtn.style.transform = "translateX(-2.15rem)";
+    closebtn.style.transform = "translateX(-2.15rem)";
   }
 }
 

@@ -12,9 +12,8 @@
   top: 0;
   right: 0;
   z-index: 8;
-  transform: translateX(-3em);
-  justify-content: right;
-  transition: transform .1s ease;
+  transform: translateX(-2.15rem);
+  transition: var(--h);
 }
 
 #mnu:checked~#mnubtn #ham {
@@ -28,9 +27,8 @@
   top: 0;
   right: 0;
   z-index: 8;
-  transform: translateX(-3em);
-  justify-content: right;
-  transition: transform .1s ease;
+  transform: translateX(-2.15em);
+  transition: var(--h);
 }
 
 #cross {
