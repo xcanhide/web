@@ -8,7 +8,7 @@ function scrollFunction() {
   if (currentScroll > 10) {
     topbtn.style.transform = "translateY(0em)";
   } else {
-    topbtn.style.transform = "translateY(2.5em)";
+    topbtn.style.transform = "translateY(3em)";
   }
 }
 
