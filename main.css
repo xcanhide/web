@@ -3,7 +3,7 @@
   --fg: rgb(10, 10, 10);
   --bgtrans: rgb(255, 255, 255, 0.9);
   font-size: calc(1rem + 1vmin);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Rubik', sans-serif;
   --s: all .5s ease;
   --h: all .2s ease;
   --gray:rgb(190,190,190);
@@ -32,18 +32,21 @@ body {
 }
 
 .txt {
+  font-size: 1rem;
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+.txt2 {
   font-size: .8rem;
   text-align: center;
   text-decoration: none;
   color: var(--fg);
-  font-weight: bold;
-}
-
-.txt2 {
-  font-size: .75rem;
-  text-align: center;
-  text-decoration: none;
-  color: var(--fg);
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
 }
 
 .box {
