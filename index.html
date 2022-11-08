@@ -10,70 +10,65 @@
     <link rel="stylesheet" href="gallery.css" type="text/css" charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <title>Alexander Korelov</title>
-    <style>@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');</style> 
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+  </style>
   </head>
 
   <body>
     <input type="checkbox" class="hide" id="mnu">
     <label for="mnu" class="btn flex" id="mnubtn">
-        <svg class="icon" id="ham" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48
+      <svg class="icon" id="ham" xmlns="http://www.w3.org/2000/svg" viewBox="0 0
+        48
         48">
-        <path d="M5.25 37.25V32.7h37.5v4.55Zm0-10.95v-4.55h37.5v4.55Zm0-11v-4.6h37.5v4.6Z"/>
+        <path d="M5.25
+          37.25V32.7h37.5v4.55Zm0-10.95v-4.55h37.5v4.55Zm0-11v-4.6h37.5v4.6Z" />
         </svg>
-    </label>
+      </label>
 
-    <label for="mnu" id="overlaymenu">
+      <label for="mnu" id="overlaymenu">
 
-      <label for="mnu" class="btn flex" id="mnubtn">
-        <svg class="icon" id="cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48
-        48">
-        <path d="M12.45 38.7 9.3 35.55 20.85 24 9.3 12.5l3.15-3.2L24 20.8 35.55 9.3l3.15 3.2L27.2 24l11.5 11.55-3.15 3.15L24 27.2Z"/>
-        </svg>
-    </label>
+        <label for="mnu" class="btn flex" id="closebtn">
+          <svg class="icon" id="cross" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 48
+            48">
+            <path
+              d="M12.45 38.7 9.3 35.55 20.85 24 9.3 12.5l3.15-3.2L24 20.8 35.55
+              9.3l3.15 3.2L27.2 24l11.5 11.55-3.15 3.15L24 27.2Z" />
+            </svg>
+          </label>
 
-      <div class="menulist">
-        <label for="mnu" class="menulink" onclick="window.location.href='#';">ABOUT</label>
-        <label for="mnu" class="menulink" onclick="window.location.href='#';">GALLERY</label>
-        <label for="mnu" class="menulink" onclick="window.location.href='#';">CONTACT</label>
-      </div>
-    </label>
+          <div class="menulist">
+            <label for="mnu" class="menulink"
+              onclick="window.location.href='#';">ABOUT</label>
+            <label for="mnu" class="menulink"
+              onclick="window.location.href='#';">GALLERY</label>
+            <label for="mnu" class="menulink"
+              onclick="window.location.href='#';">CONTACT</label>
+          </div>
+        </label>
 
-      <div onclick="topFunction()" class="btn flex" id="topbtn">
-        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48
-          48">
-          <path d="M21.75 40.4V16.3l-10.9 10.95-3.25-3.3L24 7.6l16.45 16.35-3.2
-            3.3L26.3 16.3v24.1Z" />
-          </svg>
-        </div>
+        <div onclick="topFunction()" class="btn flex" id="topbtn">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48
+            48">
+            <path d="M21.75 40.4V16.3l-10.9 10.95-3.25-3.3L24 7.6l16.45
+              16.35-3.2
+              3.3L26.3 16.3v24.1Z" />
+            </svg>
+          </div>
 
-        <div class="gallery">
-          <div class="frame flex">
-            <img
-              src="flower.jpeg"
-              loading="lazy" />
-            <div class="label">
-              <div style="margin: 2rem;">
-                <a class="txt">FLOWER</a><br>
-                <a class="txt2">This is a small description with a link below,
-                  it can take multiple lines and stays within
-                  bounds.</a><br>
-                <div class="linkbox flex">
-                  <a class="btn flex" href="#"><svg class="icon"
-                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-                      <title>More</title>
-                      <path d="m24 40.4-3.2-3.3 10.9-10.85H7.6V21.7h24.1L20.8
-                        10.8 24 7.6l16.45 16.35Z" />
-                      </svg></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="frame wide flex"><img
-                src="tree.jpg"
-                loading="lazy" />
+<div class="flex" style="text-align:left;justify-content:left;
+align-items:left;width:auto;height:3rem;margin-left:3rem;margin-right:3rem;margin-bottom:-3rem;">
+      <a class="txt">GALLERY</a>
+</div>
+
+
+          <div class="gallery">
+            <div class="frame flex">
+              <img src="flower.jpeg" loading="lazy" />
               <div class="label">
                 <div style="margin: 2rem;">
-                  <a class="txt">TREE TOP</a><br>
+                  <a class="txt">FLOWER</a><br>
                   <a class="txt2">This is a small description with a link below,
                     it can take multiple lines and stays within
                     bounds.</a><br>
@@ -88,14 +83,13 @@
                   </div>
                 </div>
               </div>
-              <div class="frame flex"><img
-                  src="balloon.jpeg"
-                  loading="lazy" />
+              <div class="frame wide flex"><img src="tree.jpg" loading="lazy" />
                 <div class="label">
                   <div style="margin: 2rem;">
-                    <a class="txt">BALLOON</a><br>
+                    <a class="txt">TREE TOP</a><br>
                     <a class="txt2">This is a small description with a link
-                      below, it can take multiple lines and stays within
+                      below,
+                      it can take multiple lines and stays within
                       bounds.</a><br>
                     <div class="linkbox flex">
                       <a class="btn flex" href="#"><svg class="icon"
@@ -103,19 +97,18 @@
                           48">
                           <title>More</title>
                           <path d="m24 40.4-3.2-3.3
-                            10.9-10.85H7.6V21.7h24.1L20.8 10.8 24 7.6l16.45
-                            16.35Z" />
+                            10.9-10.85H7.6V21.7h24.1L20.8
+                            10.8 24 7.6l16.45 16.35Z" />
                           </svg></a>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="frame flex"><img
-                    src="whale.jpeg"
-                    loading="lazy" />
+                <div class="frame flex"><img src="balloon.jpeg" loading="lazy"
+                    />
                   <div class="label">
                     <div style="margin: 2rem;">
-                      <a class="txt">WHALE</a><br>
+                      <a class="txt">BALLOON</a><br>
                       <a class="txt2">This is a small description with a link
                         below, it can take multiple lines and stays within
                         bounds.</a><br>
@@ -132,12 +125,11 @@
                       </div>
                     </div>
                   </div>
-                  <div class="frame flex"><img
-                      src="stairs.jpeg"
-                      loading="lazy" />
+                  <div class="frame flex"><img src="whale.jpeg" loading="lazy"
+                      />
                     <div class="label">
                       <div style="margin: 2rem;">
-                        <a class="txt">STAIRWAY</a><br>
+                        <a class="txt">WHALE</a><br>
                         <a class="txt2">This is a small description with a link
                           below, it can take multiple lines and stays within
                           bounds.</a><br>
@@ -154,32 +146,57 @@
                         </div>
                       </div>
                     </div>
-                    <div class="frame wide flex"><img
-                        src="lamp.jpg"
+                    <div class="frame flex"><img src="stairs.jpeg"
                         loading="lazy" />
                       <div class="label">
                         <div style="margin: 2rem;">
-                          <a class="txt">BRIDGE</a><br>
+                          <a class="txt">STAIRWAY</a><br>
                           <a class="txt2">This is a small description with a
-                            link below, it can take multiple lines and stays
-                            within
+                            link
+                            below, it can take multiple lines and stays within
                             bounds.</a><br>
                           <div class="linkbox flex">
                             <a class="btn flex" href="#"><svg class="icon"
                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0
-                                48 48">
+                                48
+                                48">
                                 <title>More</title>
                                 <path d="m24 40.4-3.2-3.3
                                   10.9-10.85H7.6V21.7h24.1L20.8 10.8 24
-                                  7.6l16.45 16.35Z" />
+                                  7.6l16.45
+                                  16.35Z" />
                                 </svg></a>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
+                      <div class="frame wide flex"><img src="lamp.jpg"
+                          loading="lazy" />
+                        <div class="label">
+                          <div style="margin: 2rem;">
+                            <a class="txt">BRIDGE</a><br>
+                            <a class="txt2">This is a small description with a
+                              link below, it can take multiple lines and stays
+                              within
+                              bounds.</a><br>
+                            <div class="linkbox flex">
+                              <a class="btn flex" href="#"><svg class="icon"
+                                  xmlns="http://www.w3.org/2000/svg" viewBox="0
+                                  0
+                                  48 48">
+                                  <title>More</title>
+                                  <path d="m24 40.4-3.2-3.3
+                                    10.9-10.85H7.6V21.7h24.1L20.8 10.8 24
+                                    7.6l16.45 16.35Z" />
+                                  </svg></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
-                    <script src="top.js"></script>
+                      <script src="top.js"></script>
 
-                  </body>
-                </html>
+                    </body>
+
+                  </html>

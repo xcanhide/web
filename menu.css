@@ -12,6 +12,9 @@
   top: 0;
   right: 0;
   z-index: 8;
+  transform: translateX(-3em);
+  justify-content: right;
+  transition: transform .1s ease;
 }
 
 #mnu:checked~#mnubtn #ham {
@@ -20,17 +23,27 @@
   fill: transparent;
 }
 
+#closebtn {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 8;
+  transform: translateX(-3em);
+  justify-content: right;
+  transition: transform .1s ease;
+}
+
 #cross {
   transition: var(--s);
   fill: var(--gray);
 }
 
-#mnu:checked~#overlaymenu #mnubtn #cross {
+#mnu:checked~#overlaymenu #closebtn #cross {
   transition: var(--s);
   transform: rotate(180deg);
 }
 
-#mnu:checked~#overlaymenu #mnubtn:hover #cross {
+#mnu:checked~#overlaymenu #closebtn:hover #cross {
   transition: var(--s);
   fill: var(--white);
 }
