@@ -35,7 +35,7 @@
 }
 
 .label {
-  display: flex;
+  display: grid;
   visibility: hidden;
   opacity: 0;
   transition: var(--h);
@@ -47,6 +47,20 @@
   height: 100%;
   width: 100%;
   background-color: var(--bgtrans);
+  grid-template-columns: repeat(1, auto);
+  grid-auto-rows: repeat(3, auto);
+  grid-gap: 0;
+  grid-auto-flow: dense;
+}
+
+.labelbox{
+  display: flex;
+  width: 100%;
+  height: max(100%, 3rem);
+  align-items: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .frame:hover .label {

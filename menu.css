@@ -89,7 +89,7 @@
   align-items: center;
   justify-content: center;
   grid-template-columns: repeat(1, auto);
-  grid-auto-rows: repeat(3, 3rem);
+  grid-auto-rows: repeat(5, 3rem);
   grid-gap: 0;
   grid-auto-flow: dense;
 }
