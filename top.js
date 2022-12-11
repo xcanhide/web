@@ -9,9 +9,9 @@ window.onscroll = function() {
 function scrollFunction() {
   var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
   if (currentScroll > 100) {
-    topbtn.style.transform = "translateY(0rem)";
+    topbtn.style.transform = "translateY(0)";
   } else {
-    topbtn.style.transform = "translateY(3rem)";
+    topbtn.style.transform = "translateY(var(--block))";
   }
 }
 
@@ -19,9 +19,11 @@ function menuFunction() {
   var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
   if (currentScroll > 0) {
     menubtn.style.transform = "translateX(0rem)";
+    logobtn.style.transform = "translateX(0rem)";
     closebtn.style.transform = "translateX(0rem)";
   } else {
     menubtn.style.transform = "translateX(-2.15rem)";
+    logobtn.style.transform = "translateX(2.15rem)";
     closebtn.style.transform = "translateX(-2.15rem)";
   }
 }

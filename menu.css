@@ -8,7 +8,12 @@
 }
 
 #logobtn{
-  margin-left: 2.15rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  transform: translateX(2.15rem);
+  transition: var(--h);
 }
 
 #mnubtn {
