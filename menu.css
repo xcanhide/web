@@ -7,6 +7,10 @@
   transition: var(--s);
 }
 
+#logobtn{
+  margin-left: 2.15rem;
+}
+
 #mnubtn {
   position: fixed;
   top: 0;
