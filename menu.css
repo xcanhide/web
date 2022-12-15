@@ -52,7 +52,7 @@
 
 #mnu:checked~#overlaymenu #closebtn:hover #cross {
   transition: var(--s);
-  fill: var(--white);
+  fill: #FFF;
 }
 
 #topbtn {
@@ -121,5 +121,5 @@
 
 .menulink:hover {
   transition: var(--s);
-  color: white;
+  color: #FFF;
 }

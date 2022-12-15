@@ -5,9 +5,8 @@
   font-size: calc(1rem + 1vmin);
   --s: all .5s ease;
   --h: all .2s ease;
-  --gray:rgb(190,190,190);
-  --white:rgb(255,255,255);
   --block:3rem;
+  --gray: rgb(200,200,200);
 }
 
 * {
@@ -88,10 +87,10 @@ body {
 }
 
 .button-34 {
-  background: var(--fg);
+  background: linear-gradient(132deg, rgb(25, 25, 25), rgb(5, 5, 5) 50.00% 100.00%);
   border-radius: 999px;
   border: 0;
-  box-shadow: var(--fg) 0 5px 15px -10px;
+  box-shadow: #000 0 3px 15px -10px;
   box-sizing: border-box;
   color: #FFFFFF;
   cursor: pointer;
@@ -111,6 +110,7 @@ body {
 }
 
 .button-34:hover {
-  padding: 0 2.2em;
+  padding: 0 1.2rem;
   transition: var(--h);
+  border-radius: 999px;
 }
