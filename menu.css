@@ -94,19 +94,18 @@
 
 .menulist {
   z-index: -1;
-  margin-top: -20%;
-  display: grid;
+  margin-top: -16.67%;
+  display: flex;
+  flex-direction: column;
   overflow: visible;
   width: auto;
-  height: 9rem;
+  height: auto;
   transition: var(--s);
   text-align: center;
   align-items: center;
   justify-content: center;
-  grid-template-columns: repeat(1, auto);
-  grid-auto-rows: repeat(5, 3rem);
-  grid-gap: 0;
-  grid-auto-flow: dense;
+
+
 }
 
 .menulink {
