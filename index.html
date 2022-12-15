@@ -1,130 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,
-      user-scalable=no">
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,
+      user-scalable=no"
+    />
     <link rel="stylesheet" href="main.css" type="text/css" charset="utf-8" />
     <link rel="stylesheet" href="menu.css" type="text/css" charset="utf-8" />
     <link rel="stylesheet" href="gallery.css" type="text/css" charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <title>KRLV</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <input type="checkbox" class="hide" id="mnu">
+    <input type="checkbox" class="hide" id="mnu" />
     <label for="mnu" class="btn flex" id="mnubtn">
-      <svg class="icon" id="ham" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><title>Menu</title>
-        <path d="M4.167 31.333v-4.416h31.666v4.416Zm0-9.125v-4.416h31.666v4.416Zm0-9.125V8.625h31.666v4.458Z"/>
+      <svg
+        class="icon"
+        id="ham"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 40 40"
+      >
+        <title>Menu</title>
+        <path
+          d="M4.167 31.333v-4.416h31.666v4.416Zm0-9.125v-4.416h31.666v4.416Zm0-9.125V8.625h31.666v4.458Z"
+        />
+      </svg>
+    </label>
+
+    <label for="mnu" id="overlaymenu">
+      <label for="mnu" class="btn flex" id="closebtn">
+        <svg
+          class="icon"
+          id="cross"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 40 40"
+        >
+          <title>Close</title>
+          <path
+            d="m10.458 32.625-3.083-3.083L16.917 20l-9.542-9.542 3.083-3.083 9.542 9.5 9.542-9.5 3.083 3.083L23.083 20l9.542 9.542-3.083 3.083L20 23.083Z"
+          />
         </svg>
       </label>
 
-      
+      <div class="menulist">
+        <label
+          for="mnu"
+          class="menulink"
+          style="margin-bottom: 1rem"
+          onclick="window.location.href='#';"
+          style="margin-bottom: 1rem"
+          >ABOUT</label
+        >
+        <label
+          for="mnu"
+          class="menulink"
+          onclick="window.location.href='#';"
+          style="margin-bottom: 1rem"
+          >GALLERY</label
+        >
+        <label for="mnu" class="menulink" onclick="window.location.href='#';"
+          >CONTACT</label
+        >
+      </div>
+    </label>
 
-      <label for="mnu" id="overlaymenu">
+    <a class="btn flex" href="#" id="logobtn">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+        <title>Logo</title>
+        <path
+          d="M21.125 15.333V2.875h16v12.458Zm-18.292 7V2.875h16.084v19.458Zm18.292 14.75V17.542h16v19.541Zm-18.292 0v-12.5h16.084v12.5Zm4.459-19.166H14.5V7.292H7.292Zm18.291 14.708h7.125V22h-7.125Zm0-21.708h7.125V7.292h-7.125ZM7.292 32.625H14.5V29H7.292ZM14.5 17.917Zm11.083-7Zm0 11.083ZM14.5 29Z"
+        /></svg
+    ></a>
 
-        <label for="mnu" class="btn flex" id="closebtn">
-          <svg class="icon" id="cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><title>Close</title>
-            <path d="m10.458 32.625-3.083-3.083L16.917 20l-9.542-9.542 3.083-3.083 9.542 9.5 9.542-9.5 3.083 3.083L23.083 20l9.542 9.542-3.083 3.083L20 23.083Z"/>
-            </svg>
-          </label>
+    <div onclick="topFunction()" class="btn flex" id="topbtn">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+        <title>Back to Top</title>
+        <path
+          d="M17.792 33.917V14.583L9.25 23.167l-3.167-3.209L20 6.125l13.917 13.833-3.125 3.209-8.584-8.584v19.334Z"
+        />
+      </svg>
+    </div>
 
-          <div class="menulist">
-            <label for="mnu" class="menulink" style="margin-bottom:1rem;"
-              onclick="window.location.href='#';" style="margin-bottom:1rem;">ABOUT</label>
-            <label for="mnu" class="menulink"
-              onclick="window.location.href='#';" style="margin-bottom:1rem;">GALLERY</label>
-            <label for="mnu" class="menulink"
-              onclick="window.location.href='#';">CONTACT</label>
-          </div>
-        </label>
+    <div
+      class="flex box"
+      style="padding-top: var(--block); margin-bottom: -1.75rem; height: auto"
+    >
+      <div class="toptext" style="margin: 1rem">
+        SOMETHING<br /><b>FRESH</b> & <b>RESPONSIVE</b><br />IS COOKING HERE
+      </div>
+    </div>
 
-        <a class="btn flex" href="#" id="logobtn">
-          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><title>Logo</title>
-          <path d="M21.125 15.333V2.875h16v12.458Zm-18.292 7V2.875h16.084v19.458Zm18.292 14.75V17.542h16v19.541Zm-18.292 0v-12.5h16.084v12.5Zm4.459-19.166H14.5V7.292H7.292Zm18.291 14.708h7.125V22h-7.125Zm0-21.708h7.125V7.292h-7.125ZM7.292 32.625H14.5V29H7.292ZM14.5 17.917Zm11.083-7Zm0 11.083ZM14.5 29Z"/>
-        </svg></a>
+    <div class="gallery">
+      <div class="frame flex">
+        <img src="flower.jpeg" loading="lazy" />
+        <div class="label">
+          <a class="labeltitle flex" style="margin-top: auto">WALLFLOWER</a>
+          <a class="labeldesc" style="margin-top: auto"
+            >This is a small description with a link below, it can take multiple
+            lines and stays within bounds.</a
+          >
+          <button
+            class="button-34"
+            role="button"
+            style="margin-top: auto; margin-bottom: auto"
+          >
+            READ MORE
+          </button>
+        </div>
+      </div>
+      <div class="frame wide flex">
+        <img src="tree.jpg" loading="lazy" />
+        <div class="label">
+          <a class="labeltitle flex" style="margin-top: auto">AUTUMN TRAIN</a>
+          <a class="labeldesc" style="margin-top: auto"
+            >This is a small description with a link below, it can take multiple
+            lines and stays within bounds.</a
+          >
+          <button
+            class="button-34"
+            role="button"
+            style="margin-top: auto; margin-bottom: auto"
+          >
+            READ MORE
+          </button>
+        </div>
+      </div>
+      <div class="frame flex">
+        <img src="balloon.jpeg" loading="lazy" />
+        <div class="label">
+          <a class="labeltitle flex" style="margin-top: auto">BALOON-FACE</a>
+          <a class="labeldesc" style="margin-top: auto"
+            >This is a small description with a link below, it can take multiple
+            lines and stays within bounds.</a
+          >
+          <button
+            class="button-34"
+            role="button"
+            style="margin-top: auto; margin-bottom: auto"
+          >
+            READ MORE
+          </button>
+        </div>
+      </div>
+      <div class="frame flex">
+        <img src="whale.jpeg" loading="lazy" />
+        <div class="label">
+          <a class="labeltitle flex" style="margin-top: auto">EVENING BLUES</a>
+          <a class="labeldesc" style="margin-top: auto"
+            >This is a small description with a link below, it can take multiple
+            lines and stays within bounds.</a
+          >
+          <button
+            class="button-34"
+            role="button"
+            style="margin-top: auto; margin-bottom: auto"
+          >
+            READ MORE
+          </button>
+        </div>
+      </div>
+      <div class="frame flex">
+        <img src="stairs.jpeg" loading="lazy" />
+        <div class="label">
+          <a class="labeltitle flex" style="margin-top: auto"
+            >STAIRWAY TO THE ROOF</a
+          >
+          <a class="labeldesc" style="margin-top: auto"
+            >This is a small description with a link below, it can take multiple
+            lines and stays within bounds.</a
+          >
+          <button
+            class="button-34"
+            role="button"
+            style="margin-top: auto; margin-bottom: auto"
+          >
+            READ MORE
+          </button>
+        </div>
+      </div>
+      <div class="frame wide flex">
+        <img src="lamp.jpg" loading="lazy" />
+        <div class="label">
+          <a class="labeltitle flex" style="margin-top: auto">MOUNTAIN VIEW</a>
+          <a class="labeldesc" style="margin-top: auto"
+            >This is a small description with a link below, it can take multiple
+            lines and stays within bounds.</a
+          >
+          <button
+            class="button-34"
+            role="button"
+            style="margin-top: auto; margin-bottom: auto"
+          >
+            READ MORE
+          </button>
+        </div>
+      </div>
+    </div>
 
-        <div onclick="topFunction()" class="btn flex" id="topbtn">
-          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><title>Back to Top</title>
-            <path d="M17.792 33.917V14.583L9.25 23.167l-3.167-3.209L20 6.125l13.917 13.833-3.125 3.209-8.584-8.584v19.334Z"/>
-            </svg>
-          </div>
-
-          <div class="flex box" style="padding-top:var(--block);margin-bottom:-1.75rem;height:auto;">
-            <div class="toptext"style="margin:1rem;">
-              SOMETHING<br><b>FRESH</b> & <b>RESPONSIVE</b><br>IS COOKING HERE
-            </div>
-
-          </div>
-
-
-
-</div>
-
-          <div class="gallery">
-            <div class="frame flex">
-              <img src="flower.jpeg" loading="lazy" />
-              <div class="label">
-                <a class="labeltitle flex"style="margin-top:auto;">WALLFLOWER</a>
-                <a class="labeldesc" style="margin-top:auto;">This is a small description with a link below,
-                  it can take multiple lines and stays within
-                  bounds.</a>
-                  <button class="button-34" role="button" style="margin-top:auto;margin-bottom:auto;">READ MORE</button>
-              </div>
-              </div>
-              <div class="frame wide flex"><img src="tree.jpg" loading="lazy" />
-                <div class="label">
-                  <a class="labeltitle flex"style="margin-top:auto;">AUTUMN TRAIN</a>
-                  <a class="labeldesc" style="margin-top:auto;">This is a small description with a link below,
-                    it can take multiple lines and stays within
-                    bounds.</a>
-                    <button class="button-34" role="button" style="margin-top:auto;margin-bottom:auto;">READ MORE</button>
-                </div>
-                </div>
-                <div class="frame flex"><img src="balloon.jpeg" loading="lazy"/>
-                  <div class="label">
-                    <a class="labeltitle flex"style="margin-top:auto;">BALOON-FACE</a>
-                    <a class="labeldesc" style="margin-top:auto;">This is a small description with a link below,
-                      it can take multiple lines and stays within
-                      bounds.</a>
-                      <button class="button-34" role="button" style="margin-top:auto;margin-bottom:auto;">READ MORE</button>
-                  </div>
-                  </div>
-                  <div class="frame flex"><img src="whale.jpeg" loading="lazy"/>
-                    <div class="label">
-                      <a class="labeltitle flex"style="margin-top:auto;">EVENING BLUES</a>
-                      <a class="labeldesc" style="margin-top:auto;">This is a small description with a link below,
-                        it can take multiple lines and stays within
-                        bounds.</a>
-                        <button class="button-34" role="button" style="margin-top:auto;margin-bottom:auto;">READ MORE</button>
-                    </div>
-                    </div>
-                    <div class="frame flex"><img src="stairs.jpeg" loading="lazy" />
-                      <div class="label">
-                        <a class="labeltitle flex"style="margin-top:auto;">STAIRWAY TO THE ROOF</a>
-                        <a class="labeldesc" style="margin-top:auto;">This is a small description with a link below,
-                          it can take multiple lines and stays within
-                          bounds.</a>
-                          <button class="button-34" role="button" style="margin-top:auto;margin-bottom:auto;">READ MORE</button>
-                      </div>
-                      </div>
-                      <div class="frame wide flex"><img src="lamp.jpg" loading="lazy" />
-                        <div class="label">
-                          <a class="labeltitle flex"style="margin-top:auto;">MOUNTAIN VIEW</a>
-                          <a class="labeldesc" style="margin-top:auto;">This is a small description with a link below,
-                            it can take multiple lines and stays within
-                            bounds.</a>
-                            <button class="button-34" role="button" style="margin-top:auto;margin-bottom:auto;">READ MORE</button>
-                        </div>
-                        </div>
-                      </div>
-
-                      <script src="top.js"></script>
-
-                    </body>
-
-                  </html>
+    <script src="top.js"></script>
+  </body>
+</html>
